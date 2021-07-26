@@ -1,5 +1,5 @@
-# author:
-# date:
+# author: layla
+# date:7/23/2021
 
 from random import randint
 
@@ -29,12 +29,17 @@ print('\n' + 'Task 1' + '\n')
 #
 # WRITE CODE BELOW #
 a = float(input('a = '))
-b =
-c =
-d =
+b = 4
+c = 6
+d = 10
 
 print('a == b |', a == b)
-
+print('a == b == c',a == b == c)
+print('a > b > c', a > b > c)
+print(' a < b < c < d',  a < b < c < d)
+print('a != b == c != d',a != b == c != d)
+print(' a >= b >= c == d',  a >= b >= c == d)
+print('a <= b > c <= d', a <= b > c <= d)
 # 2 - if Statements (ONLY USE if STATEMENTS)
 print('\n' + 'Task 2' + '\n')
 # Instructions:
@@ -54,10 +59,16 @@ print('\n' + 'Task 2' + '\n')
 #
 # WRITE CODE BELOW #
 word1 = input('enter a word: ')
-word2 =
+word2 = 'mom'
 
 if word1 == word2:
     print(word1, 'and', word2, 'are the same!')
+elif word1:
+    print(word1, 'and', word2, 'they are not the same')
+elif word1:
+    print(word1, 'and', word2, 'the first word appears before the second word')
+else:
+    print(word1, 'and', word2, 'the first word appears after the second word')
 
 
 # 3 - if-elif-else Statements
@@ -79,6 +90,20 @@ print('\n' + 'Task 3' + '\n')
 #
 # WRITE CODE BELOW #
 dice1 = randint(1, 6)
+dice2 = randint(1, 6)
+print(dice1)
+print(dice2)
+
+if dice1==dice2:
+    print('Doubles!', dice1,'and', dice2)
+elif dice1==dice2==1:
+    print('Snake Eyes!')
+if dice1%2==dice2%2==0:
+    print('Evens!', dice1,'and', dice2)
+else:
+    print('Odds!', dice1, 'and', dice2)
+
+
 
 
 
